@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Belajar react Js</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const container = document.getElementById("root");
+      const root = ReactDOM.createRoot(container);
+
+      function Header({ name }) {
+        return <h1>Belajar React Js bareng {name ? name : "wpu"} 🚀</h1>;
+      }
+
+      function HomePage() {
+        const [angka, setAngka] = React.useState(0);
+        function tambahAngka() {
+            setAngka(angka + 1);
+        }
+
+        function kurangAngka() {
+            setAngka(angka - 1);
+        }
+
+        function resetAngka() {
+            setAngka(0);
+        }
+        return (
+          <div>
+            <button onClick={tambahAngka}>+</button>
+            <button onClick={kurangAngka}>-</button>
+            <br/>
+            <p>Angka: {angka}</p>
+            <button onClick={resetAngka}>Reset!</button>
+          </div>
+        );
+      }
+
+      root.render(<Header />);
+      root.render(<HomePage />);
+    </script>
+  </body>
+</html>
