@@ -1,0 +1,28 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+}
+
+.download-btn {
+  margin-top: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-btn:hover {
+  background-color: #0000;
+  color: #fff;
+  border: 1px solid #401c72;
+}
+
+.img-result {
+  height: auto;
+  width: 400px;
+}
