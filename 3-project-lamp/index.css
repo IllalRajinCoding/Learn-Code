@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #222;
+  transition: background 0.3s ease;
+}
+
+body.on {
+  background: radial-gradient(circle, #cdcbbd, #372626);
+}
+
+.light__inner {
+  position: absolute;
+  left: calc(50% - 2px);
+  bottom: 50%;
+  height: 60vh;
+  width: 4px;
+  background: #000;
+  z-index: 1;
+}
+
+.bulb {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  z-index: 2;
+}
+
+.bulb i {
+  position: absolute;
+  font-size: 4rem;
+  color: #444;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.switch {
+  position: absolute;
+  top: 60px;
+  right: 100px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: #ce8f8f 0px 10px 15px -5px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.switch i {
+  font-size: 1.5rem;
+}
+
+.on .bulb i{
+    color: #ffd700;
+}
+
+.on .switch {
+    background: #ffd700;
+}

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: #8fff2f;
+}
+
+.container {
+    text-align: center;
+}
+
+span {
+    color: #786c6c;
+}
+
+button {
+    background-color: chocolate;
+    color: #fff;
+    padding:0.5rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff9900;
+    color: #fff;
+}
