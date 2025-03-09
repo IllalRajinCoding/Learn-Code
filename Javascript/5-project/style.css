@@ -1,0 +1,22 @@
+body {
+    background-color: #d99595;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.container input {
+    width: 277px;
+}
+
+.container button {
+    font-size: 2rem;
+    padding: 1rem;
+}
